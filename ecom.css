@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.home{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(./imgs/design_hero_endframe__f4saxkdyib2a_xlarge.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: cover;
+    padding: 10px;
+}
+
+.navbar .logo a{
+    padding: 10px;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.navbar .list {
+    gap: 20px;
+   display: flex;
+   justify-content: center;
+   
+}
+
+.navbar .list ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.navbar .list a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    
+}
+
+.navbar .search {
+    border: 1px solid #023047;
+    background-color: white;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
+}
+.navbar .search input{
+    border: none;
+}
+
+.navbar .search input:focus{
+    border: none;
+    outline: none;
+    
+}
+
+.center{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.center h1{
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.center p{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.center a{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: white;
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 10px;
+}
+
+.products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    font-size: 30px;
+}
+
+.prdcts{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+   
+    padding: 10px;
+    margin-bottom: 10px;
+    
+}
+.prdct{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.prdct img{
+width: 300px;
+border-radius: 10px;
+}
+
+.prdct h1,h2,h3{
+    padding: 5px;
+}
+.prdct a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #023047;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    font-size: 20px;
+}
+@media only screen and (max-width:800px){
+
+    .center h1{
+        font-size: 20px;
+        
+    }
+    .center p{
+        display: flex;
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .center a{
+    font-size: 10px;
+    background-color: red;
+
+    }
+
+
+    .navbar .logo a{
+        font-size: 20px;
+    }
+
+    .navbar .list ul{
+        
+        flex-direction: column;
+        background-color: aqua;
+        padding-left: 10px;
+        
+    }
+
+    .navbar .list a{
+        font-size: 10px;
+    }
+    .navbar .search{
+        
+    }
+
+
+
+
+
+
+
+
+
+
+}
